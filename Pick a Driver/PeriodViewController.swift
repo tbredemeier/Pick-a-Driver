@@ -10,29 +10,25 @@ import UIKit
 
 class PeriodViewController: UIViewController {
 
+    var period = String()
+
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     @IBAction func onPeriodButtonTapped(_ sender: UIButton) {
+        period = (sender.titleLabel?.text)!
         performSegue(withIdentifier: "PeriodToNamesSegue", sender: nil)
     }
-    
-    /*
+
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        let dvc = segue.destination as! NamesTableViewController
+        dvc.period = period
     }
-    */
-
 }

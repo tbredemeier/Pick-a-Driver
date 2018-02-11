@@ -10,11 +10,27 @@ import UIKit
 
 class NamesTableViewController: UITableViewController {
 
-    var names = ["Tony", "Tina", "Sally", "Ralph", "Eunice", "Charlie"]
+    var period = String()
+    var names = [String]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        loadTestNames()
+        navigationItem.title = period
         tableView.isEditing = true
+    }
+
+    func loadTestNames() {
+        switch period {
+        case "1st Period" :
+            names = ["Sue", "Mary", "Jim", "Ralph", "Tom"]
+        case "2nd Period" :
+            names = ["Gwen", "Thomas", "Caroline", "Alex", "Seth"]
+        case "3rd Period" :
+            names = ["Ethan", "Grace", "Reagan", "Reed"]
+        default:
+            names = ["William", "Billy", "Will", "Bill"]
+        }
     }
 
     override func didReceiveMemoryWarning() {
