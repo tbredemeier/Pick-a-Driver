@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -42,7 +43,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CgJ-76-QyK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="860" y="164.16791604197903"/>
+            <point key="canvasLocation" x="1554" y="163"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="vAI-fG-qvk">
@@ -55,12 +56,147 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="ClU-xs-zMd" kind="relationship" relationship="rootViewController" id="DIm-pk-c0e"/>
+                        <segue destination="E0e-ln-1em" kind="relationship" relationship="rootViewController" id="nnJ-p9-vAx"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hed-jb-AnK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="113" y="164"/>
+        </scene>
+        <!--Select a Period-->
+        <scene sceneID="fbO-zw-n6v">
+            <objects>
+                <viewController id="E0e-ln-1em" customClass="PeriodViewController" customModule="Pick_a_Driver" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Zkc-Lo-gUV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iRV-xO-RcP">
+                                <rect key="frame" x="112" y="94" width="150" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="AJi-e4-Z8h"/>
+                                    <constraint firstAttribute="height" constant="50" id="byy-TJ-5qB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="1st Period"/>
+                                <connections>
+                                    <action selector="onPeriodButtonTapped:" destination="E0e-ln-1em" eventType="touchUpInside" id="cHu-sl-BA9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IGg-o3-aYP">
+                                <rect key="frame" x="112" y="152" width="150" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="2Jn-aH-I7A"/>
+                                    <constraint firstAttribute="width" constant="150" id="BRq-sA-fZL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="2nd Period"/>
+                                <connections>
+                                    <action selector="onPeriodButtonTapped:" destination="E0e-ln-1em" eventType="touchUpInside" id="s7R-G7-dQE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="43e-od-2eY">
+                                <rect key="frame" x="112" y="210" width="150" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="XKb-79-FdR"/>
+                                    <constraint firstAttribute="width" constant="150" id="wmM-TK-dFF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="3rd Period"/>
+                                <connections>
+                                    <action selector="onPeriodButtonTapped:" destination="E0e-ln-1em" eventType="touchUpInside" id="5Zd-We-xab"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hev-xt-hDO">
+                                <rect key="frame" x="112" y="268" width="150" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="3F0-oL-iQY"/>
+                                    <constraint firstAttribute="height" constant="50" id="7lC-4n-4Fa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="4th Period"/>
+                                <connections>
+                                    <action selector="onPeriodButtonTapped:" destination="E0e-ln-1em" eventType="touchUpInside" id="oC4-bP-kai"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tpQ-Dg-Kco">
+                                <rect key="frame" x="112" y="326" width="150" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="J5u-Zo-BCr"/>
+                                    <constraint firstAttribute="height" constant="50" id="cRH-hC-iHU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="5th Period"/>
+                                <connections>
+                                    <action selector="onPeriodButtonTapped:" destination="E0e-ln-1em" eventType="touchUpInside" id="bcx-7x-pW9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N9d-dJ-bR5">
+                                <rect key="frame" x="112" y="384" width="150" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="3hp-yA-8Ei"/>
+                                    <constraint firstAttribute="width" constant="150" id="p3C-bu-XLx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="6th Period"/>
+                                <connections>
+                                    <action selector="onPeriodButtonTapped:" destination="E0e-ln-1em" eventType="touchUpInside" id="3YK-X2-VzC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vgl-1n-f1I">
+                                <rect key="frame" x="112" y="442" width="150" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="2Kt-P6-fjN"/>
+                                    <constraint firstAttribute="width" constant="150" id="e3u-KK-WI6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="7th Period"/>
+                                <connections>
+                                    <action selector="onPeriodButtonTapped:" destination="E0e-ln-1em" eventType="touchUpInside" id="Gxg-lB-tac"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eO6-xU-el4">
+                                <rect key="frame" x="112" y="500" width="150" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="3F0-QJ-AbO"/>
+                                    <constraint firstAttribute="height" constant="50" id="QTO-83-0Br"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="8th Period"/>
+                                <connections>
+                                    <action selector="onPeriodButtonTapped:" destination="E0e-ln-1em" eventType="touchUpInside" id="bHs-N0-vph"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="vgl-1n-f1I" firstAttribute="leading" secondItem="eO6-xU-el4" secondAttribute="leading" id="2DU-PR-vnJ"/>
+                            <constraint firstItem="vgl-1n-f1I" firstAttribute="top" secondItem="N9d-dJ-bR5" secondAttribute="bottom" constant="8" symbolic="YES" id="2SH-Dz-EP2"/>
+                            <constraint firstItem="N9d-dJ-bR5" firstAttribute="leading" secondItem="vgl-1n-f1I" secondAttribute="leading" id="2w3-KE-zYt"/>
+                            <constraint firstItem="43e-od-2eY" firstAttribute="top" secondItem="IGg-o3-aYP" secondAttribute="bottom" constant="8" symbolic="YES" id="Cpg-sN-Tf5"/>
+                            <constraint firstItem="iRV-xO-RcP" firstAttribute="centerX" secondItem="Zkc-Lo-gUV" secondAttribute="centerX" id="G54-dJ-hFJ"/>
+                            <constraint firstItem="43e-od-2eY" firstAttribute="leading" secondItem="Hev-xt-hDO" secondAttribute="leading" id="Gtz-QY-gE6"/>
+                            <constraint firstItem="IGg-o3-aYP" firstAttribute="leading" secondItem="43e-od-2eY" secondAttribute="leading" id="RSJ-e0-6dL"/>
+                            <constraint firstItem="N9d-dJ-bR5" firstAttribute="top" secondItem="tpQ-Dg-Kco" secondAttribute="bottom" constant="8" symbolic="YES" id="RXQ-aR-EgN"/>
+                            <constraint firstItem="iRV-xO-RcP" firstAttribute="leading" secondItem="IGg-o3-aYP" secondAttribute="leading" id="WWA-mg-xnn"/>
+                            <constraint firstItem="Hev-xt-hDO" firstAttribute="leading" secondItem="tpQ-Dg-Kco" secondAttribute="leading" id="YW8-2f-i9C"/>
+                            <constraint firstItem="tpQ-Dg-Kco" firstAttribute="leading" secondItem="N9d-dJ-bR5" secondAttribute="leading" id="ZSn-Dx-kh5"/>
+                            <constraint firstItem="iRV-xO-RcP" firstAttribute="top" secondItem="gxr-M2-HRM" secondAttribute="top" constant="30" id="eWm-pp-W3N"/>
+                            <constraint firstItem="eO6-xU-el4" firstAttribute="top" secondItem="vgl-1n-f1I" secondAttribute="bottom" constant="8" symbolic="YES" id="imO-Dn-d9g"/>
+                            <constraint firstItem="IGg-o3-aYP" firstAttribute="top" secondItem="iRV-xO-RcP" secondAttribute="bottom" constant="8" symbolic="YES" id="lQ2-oD-HqI"/>
+                            <constraint firstItem="tpQ-Dg-Kco" firstAttribute="top" secondItem="Hev-xt-hDO" secondAttribute="bottom" constant="8" symbolic="YES" id="m67-xR-Sym"/>
+                            <constraint firstItem="Hev-xt-hDO" firstAttribute="top" secondItem="43e-od-2eY" secondAttribute="bottom" constant="8" symbolic="YES" id="tXr-Ml-3tX"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="gxr-M2-HRM"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Select a Period" id="zi1-nG-6kJ"/>
+                    <connections>
+                        <segue destination="ClU-xs-zMd" kind="show" identifier="PeriodToNamesSegue" id="9xr-8H-BTG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4oE-xp-JsH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="825" y="161"/>
         </scene>
     </scenes>
 </document>
