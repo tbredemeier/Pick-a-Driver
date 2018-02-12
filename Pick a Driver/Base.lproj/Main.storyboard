@@ -606,10 +606,24 @@
                                     <constraint firstItem="U8k-cg-Bex" firstAttribute="leading" secondItem="xld-Rd-kSM" secondAttribute="leading" id="y8g-hc-c05"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="usk-LP-HbC">
+                                <rect key="frame" x="162" y="583" width="50" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="03O-yf-Wlc"/>
+                                    <constraint firstAttribute="height" constant="30" id="kK9-oX-ZWh"/>
+                                </constraints>
+                                <state key="normal" title="Start"/>
+                                <connections>
+                                    <action selector="onStartButtonTapped:" destination="vMO-Cb-duV" eventType="touchUpInside" id="Zql-bm-Tys"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="usk-LP-HbC" firstAttribute="centerX" secondItem="3nw-BC-lMK" secondAttribute="centerX" id="NiY-2i-fAt"/>
                             <constraint firstItem="8Cd-B0-VOB" firstAttribute="centerY" secondItem="3nw-BC-lMK" secondAttribute="centerY" id="Yts-q5-34P"/>
+                            <constraint firstItem="usk-LP-HbC" firstAttribute="top" secondItem="8Cd-B0-VOB" secondAttribute="bottom" id="hzP-4M-Dvn"/>
                             <constraint firstItem="8Cd-B0-VOB" firstAttribute="centerX" secondItem="3nw-BC-lMK" secondAttribute="centerX" id="osU-0W-Clg"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="E6d-JJ-vlO"/>
@@ -624,6 +638,7 @@
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="startButton" destination="usk-LP-HbC" id="P1b-Xe-VZs"/>
                         <outletCollection property="nameLabels" destination="gWo-Ie-7Y2" collectionClass="NSMutableArray" id="bZG-BG-CCs"/>
                         <outletCollection property="nameLabels" destination="FCN-qd-6CQ" collectionClass="NSMutableArray" id="T13-0g-ciP"/>
                         <outletCollection property="nameLabels" destination="rB3-iA-TCY" collectionClass="NSMutableArray" id="BYM-yY-cXt"/>
