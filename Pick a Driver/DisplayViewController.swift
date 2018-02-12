@@ -1,5 +1,5 @@
 //
-//  PeriodViewController.swift
+//  DisplayViewController.swift
 //  Pick a Driver
 //
 //  Created by tbredemeier on 2/11/18.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PeriodViewController: UIViewController {
+class DisplayViewController: UIViewController {
 
     var period = String()
 
@@ -20,15 +20,11 @@ class PeriodViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
     
-    @IBAction func onPeriodButtonTapped(_ sender: UIButton) {
-        period = (sender.titleLabel?.text)!
-        performSegue(withIdentifier: "PeriodToDisplaySegue", sender: nil)
-    }
 
     // MARK: - Navigation
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let dvc = segue.destination as! DisplayViewController
+        let dvc = segue.destination as! NamesTableViewController
         dvc.period = period
     }
 }

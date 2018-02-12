@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		AE45F8032030FC4D000FF5ED /* PeriodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE45F8022030FC4D000FF5ED /* PeriodViewController.swift */; };
+		AE45F80520310D89000FF5ED /* DisplayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE45F80420310D89000FF5ED /* DisplayViewController.swift */; };
 		AEE85A4A2030BF2F00D3940E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE85A492030BF2F00D3940E /* AppDelegate.swift */; };
 		AEE85A4F2030BF2F00D3940E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEE85A4D2030BF2F00D3940E /* Main.storyboard */; };
 		AEE85A512030BF2F00D3940E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEE85A502030BF2F00D3940E /* Assets.xcassets */; };
@@ -17,6 +18,7 @@
 
 /* Begin PBXFileReference section */
 		AE45F8022030FC4D000FF5ED /* PeriodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeriodViewController.swift; sourceTree = "<group>"; };
+		AE45F80420310D89000FF5ED /* DisplayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayViewController.swift; sourceTree = "<group>"; };
 		AEE85A462030BF2F00D3940E /* Pick a Driver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pick a Driver.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEE85A492030BF2F00D3940E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AEE85A4E2030BF2F00D3940E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				AEE85A492030BF2F00D3940E /* AppDelegate.swift */,
 				AEE85A4D2030BF2F00D3940E /* Main.storyboard */,
 				AE45F8022030FC4D000FF5ED /* PeriodViewController.swift */,
+				AE45F80420310D89000FF5ED /* DisplayViewController.swift */,
 				AEE85A5B2030C06800D3940E /* NamesTableViewController.swift */,
 				AEE85A502030BF2F00D3940E /* Assets.xcassets */,
 				AEE85A522030BF2F00D3940E /* LaunchScreen.storyboard */,
@@ -142,6 +145,7 @@
 				AE45F8032030FC4D000FF5ED /* PeriodViewController.swift in Sources */,
 				AEE85A5C2030C06800D3940E /* NamesTableViewController.swift in Sources */,
 				AEE85A4A2030BF2F00D3940E /* AppDelegate.swift in Sources */,
+				AE45F80520310D89000FF5ED /* DisplayViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
